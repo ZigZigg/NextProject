@@ -1,7 +1,8 @@
 import React from 'react'
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
-
+import Image from '../assets/kiti.jpg'
+import Button from '../components/button'
 const Home:React.FC = () => {
   return (
     <div className={styles.container}>
@@ -11,6 +12,8 @@ const Home:React.FC = () => {
       </Head>
 
       <main className={styles.main}>
+        <img src={Image} alt=""/>
+        <Button />
         <h1 className={styles.title}>
           Welcome to <a href="https://nextjs.org">Next.js!</a>
         </h1>
